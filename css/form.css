@@ -1,0 +1,57 @@
+/* slider home page */
+#slider {width:100%; height:400px; text-align:right; background:url(../images/topo-servicos.png) center top no-repeat; padding-left:60%;}
+
+/* configuracao formulario - de orcamento */
+.form_topo {width: 350px; height:450px; padding: 60px 10px; background-color: rgba(33,64,154,0.85); text-align:left;}
+.input {float: left; width: 98%; padding: 0 1% 20px; position: relative;}
+.input label.error {position: absolute; right: 18px; top: 35px; color: #f00;}
+.input input {padding-top: 10px; padding-bottom: 9px; border: none; font-size: 16px; font-weight: 100; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.input input {width: 100%; padding-left: 3%; padding-right: 3%;}
+.txt_box_form {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:23px; font-weight:normal; color:rgb(255,255,255);}
+h5 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color:rgb(255,255,255); float:left;}
+.estilo_submit {width:98%; height:50px; background:rgb(243,198,0); border:2px solid rgb(255,255,255); font:20px "Trebuchet MS", Helvetica, Arial, sans-serif; color:rgb(33,64,154); padding:2px; font-weight:bold;}	
+@media screen and (max-width: 520px) {
+#slider {width:100%; height:400px; text-align:center; background:url(../images/topo-servicos.png) center top no-repeat; padding:0;}
+input {width: 80%;}
+.form_topo {width:auto; height:400px;}
+}
+
+/* estilo do rodape */
+#rodape {padding:20px; background:rgb(33,63,154); text-align:center; clear:both; border-radius: 3px;}
+p.espaco_txt {margin:0 0 0 0; padding:10px 0 0 0;}
+.txt_rodape {color:rgb(255,255,255);}
+
+/* configuracao do container do rodape - contatos */
+.container_left {width:50%; height:550px; padding:10px; margin-top:20px; float:left; background:rgb(255,255,255);}
+
+/* configuracao do container do rodape - formulario */
+.container_right {width:50%; height:550px; padding:10px; margin-top:20px; float:right; background:rgb(255,255,255);}
+
+@media screen and (max-width: 520px) {
+.container_left {width:100%; height:auto; padding:10px; margin-top:20px; background:rgb(255,255,255);}
+.container_right {width:100%; height:550px; padding:10px; margin-top:20px; background:rgb(255,255,255);}
+}
+
+/* configuracao do formulario - rodape */
+.input_form_rodape {width:95%; height:40px; background:rgb(255,255,255); font:15px "Trebuchet MS", Helvetica, Arial, sans-serif; color:rgb(0,0,0); padding:5px; font-weight:normal; border:1px solid rgb(150,150,150); margin-bottom:20px; border-radius: 4px;}
+
+.textarea_form_rodape {width:95%; height:240px; background:rgb(255,255,255); font:15px "Trebuchet MS", Helvetica, Arial, sans-serif; color:rgb(0,0,0); padding:5px; font-weight:normal; border:1px solid rgb(150,150,150); margin-bottom:20px; border-radius: 4px;}
+
+.submit_rodape {width:30%; height:50px; background:rgb(33,63,154); border:2px solid rgb(255,255,255); font:15px "Trebuchet MS", Helvetica, Arial, sans-serif; color:rgb(255,255,255); padding:5px; font-weight:bold;}	
+
+@media screen and (max-width: 520px) {
+.submit_rodape {width:50%; height:50px; background:rgb(33,63,154); border:2px solid rgb(255,255,255); font:15px "Trebuchet MS", Helvetica, Arial, sans-serif; color:rgb(255,255,255); padding:5px; font-weight:bold;}
+}
+
+/* configuracao formulario fale com o consultor */
+.input_consultor {width:90%; height:40px; background:rgb(255,255,255); font:15px "Trebuchet MS", Helvetica, Arial, sans-serif; color:rgb(0,0,0); padding:5px; font-weight:normal; border:1px solid rgb(150,150,150); margin-bottom:20px; border-radius: 4px;}
+
+.submit_consultor {width:100%; height:40px; background:rgb(33,63,154); border:1px solid rgb(33,63,154); font:15px "Trebuchet MS", Helvetica, Arial, sans-serif; color:rgb(255,255,255); padding:5px; font-weight:bold; border-radius:5px;}	
+
+#contact_results{
+    z-index: 9990;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 98%
+}

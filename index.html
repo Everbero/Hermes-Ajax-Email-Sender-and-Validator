@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="Content-Type: text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Hermes AJAX - Formulário de email + validação em 3 camadas.">
+        <meta name="author" content="">
+
+        <title>Hermes AJAX</title>
+        <!-- Bootstrap Core CSS CDN -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- FontAwesome CDN -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Animate.CSS CND -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.CSS" rel="stylesheet">
+        <!-- Validador CSS -->
+        <link href="css/formval.css" rel="stylesheet">
+        <!-- jQuery CDN -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <!-- Hermes JS -->
+        <script src="/js/jqHermes.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="page-header">
+                    <h1>Hermes AJAX <small>Formulário de email + validação em 3 camadas</small></h1>
+                </div>
+            	<form id="contact_body" method="post" action="/php/contact_me.php" class="form">
+                    <!-- retorna o resultado do post aqui #contact_results-->
+                    <div id="contact_results"></div>
+            		
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control"  placeholder="* Nome" data-required="true" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="email" class="form-control"  placeholder="* E-mail" data-required="true" required="">
+                    </div>
+                    
+                    <!-- <div class="form-group">
+                        <input type="text" name="ddd" class="form-control"  placeholder="* Telefone" data-required="true" required="">
+                    </div> -->   
+
+                    <div class="form-group">
+                        <input type="text" name="telefone" class="form-control"  placeholder="* Telefone" data-required="true" required="">
+                    </div>   
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="* Mensagem" rows="" cols="" data-required="true" required=""></textarea>     
+                    </div>
+                    <div class="form-group">
+                        <input type="file"  name="file_attach[]" >
+                    </div>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+            	</form>
+            </div>
+        </div>
+    </body>
+</html>
